@@ -56,6 +56,7 @@ header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap
   background:radial-gradient(circle at 30% 35%,rgba(255,255,255,.10) 0 2px,transparent 3px) 0 0/22px 22px,
              radial-gradient(circle at 70% 60%,rgba(255,255,255,.07) 0 2px,transparent 3px) 0 0/17px 17px,
              linear-gradient(160deg,#3a3f45,var(--sem-bg))}
+.sem > img{display:block;width:100%;max-width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--sem-bg)}
 .ph{font-family:var(--f-mono);font-size:12.5px;line-height:1.5;opacity:.9}
 .ph b{display:block;font-family:var(--f-body);font-weight:500;font-size:14px;margin-bottom:4px}
 .databar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:6px 10px;font-family:var(--f-mono);font-size:11px;color:#b9c0c8}
@@ -90,7 +91,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
 </head>
 <body>
 
-<div class="draft"><div class="wrap">Short draft. Dark frames mark where your images go. Blue tags mark things to fill in.</div></div>
+<div class="draft"><div class="wrap">Draft. Blue tags mark things to fill in or check before going public.</div></div>
 
 <header><div class="wrap">
   <a class="brand" href="#top">CARVE</a>
@@ -106,14 +107,14 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
     <p class="muted">A catalyst speeds up a reaction only where it touches the material. We use this to carve fine, deep structures with simple equipment and no plasma.</p>
   </div>
   <figure class="sem">
-    <div class="img" style="aspect-ratio:5/4"><div class="ph"><b>Hero image</b>Your most striking nanostructure image<br>hero.jpg</div></div>
-    <div class="databar"><span>Caption <span class="todo">material, method</span></span><span class="scale"><i></i>1 µm</span></div>
+    <img src="images/hero.jpg" alt="Tilted electron microscope view of a silicon zone plate etched by MACE: curved rows of deep, smooth walls" style="aspect-ratio:5/4">
+    <div class="databar"><span>Silicon zone plate etched by MACE, 52° tilt</span><span>image width ≈ 7 µm</span></div>
   </figure>
 </div></section>
 
 <section class="cards"><div class="wrap">
   <article class="card">
-    <figure class="sem"><div class="img"><div class="ph"><b>Zone plate</b>zoneplate.jpg</div></div><div class="databar"><span>Zone plate</span><span class="scale"><i></i>1 µm</span></div></figure>
+    <figure class="sem"><img src="images/zoneplate.jpg" alt="Top view of a zone plate lens made of concentric rings of small segments"><div class="databar"><span>Zone plate, top view</span><span>width ≈ 30 µm</span></div></figure>
     <div class="body">
       <span class="eyebrow">Where we come from</span>
       <h2>X-ray optics</h2>
@@ -121,7 +122,7 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
     </div>
   </article>
   <article class="card">
-    <figure class="sem"><div class="img"><div class="ph"><b>Nanostructures</b>nano.jpg</div></div><div class="databar"><span>Si · vapour MACE</span><span class="scale"><i></i>500 nm</span></div></figure>
+    <figure class="sem"><img src="images/nano.jpg" alt="Cross-section of a row of deep, straight silicon walls etched by MACE" style="object-position:right center"><div class="databar"><span>Si lamellae, cross-section · <a href="https://doi.org/10.1016/j.mne.2023.100178" style="color:inherit">Ohlin 2023</a></span><span>scale bar 1 µm</span></div></figure>
     <div class="body">
       <span class="eyebrow">What we do now</span>
       <h2>Catalytic etching</h2>
@@ -129,10 +130,11 @@ footer .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:1
     </div>
   </article>
   <article class="card">
-    <figure class="sem"><div class="img"><div class="ph"><b>Particle on nanowire</b>One particle on top of each wire<br>particle-wire.jpg</div></div><div class="databar"><span>Si nanowire + particle</span><span class="scale"><i></i>200 nm</span></div></figure>
+    <figure class="sem"><img src="images/nanowires.jpg" alt="Dense array of upright silicon nanowires about 100 nm wide"><div class="databar"><span>Si nanowires, vapour MACE · Iovan et al., in review</span><span>wires ≈ 100 nm</span></div></figure>
     <div class="body">
       <span class="eyebrow">Where we are going</span>
       <h2>Structures with a function</h2>
+      <span class="todo" style="align-self:flex-start">image in review: keep private until accepted</span>
       <p>Next we want to give our structures a job to do, for example in photonics and sensing, and take catalytic shaping beyond silicon.</p>
     </div>
   </article>
